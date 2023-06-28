@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.big_home_container{
+    background-color: rgb(12, 9, 44);
+     height: 100vh;
+     padding: 20px 40px;
+}
+.home_container{
+    height: 80vh;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    float: right;
+    flex-direction: row;
+}
+ nav ul li{
+ display: inline-block;
+ margin-right: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(208, 57, 129);
+    padding: 8px 16px;
+}
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    font-size: 54px;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.title p{
+    font-size: 24px;
+    color: white;
+}
+@media screen and (max-width: 550px){
+    .big_home_container{
+        padding: 28px 10px;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 8px;
+    }
+    .title h1{
+        font-size: 44px;
+    }
+    .title p{
+        font-size: 18px;
+        color: white;
+    }
+}
+#register_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(12, 9, 44);
+}
+#register_form{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3rem solid rgb(208, 57, 129);;
+    padding: 1.5rem;
+}
+#register_form input[type="text"], #register_form input[type="number"]{
+    height: 36px;
+    outline: none;
+    border: 0.2rem solid rgb(208, 57, 129);;
+    margin-bottom: 10px;
+    width: 90%;
+    color: var(--template-grey);
+    padding: 0 5px;
+}
+#register_form button{
+    height: 45px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 36%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgb(208, 57, 129);
+}
+#register_form p{
+    font-size: 1.2rem;
+    color: white;
+}
+#register_form p span a{
+    color: rgb(208, 57, 129);
+    text-decoration: none;
+}
+@media screen and (max-width: 995px){
+    #register_form{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 550px){
+    #register_form{
+        width: 96%;
+        padding: 1rem;
+    }
+    #register_form p{
+        font-size: 1.6rem;
+    }
+    #register_form p{
+        font-size: 0.9rem;
+    }
+    #register_form button{
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+#login_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(12, 9, 44);
+}
+#login_form{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3rem solid rgb(208, 57, 129);
+    padding: 1.5rem;
+}
+#login_form p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+#login_form input[type="text"]{
+    height: 36px;
+    outline: none;
+    border: 0.2rem solid rgb(208, 57, 129);
+    margin-bottom: 10px;
+    width: 90%;
+    color: black;
+    padding: 0 5px;
+}
+#login_form button{
+    height: 45px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 36%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgb(208, 57, 129);
+}
+#login_form p{
+    font-size: 1.2rem;
+    color: white;
+}
+#login_form p span a{
+    color: rgb(208, 57, 129);
+    text-decoration: none;
+}
+@media screen and (max-width: 995px){
+    #login_form{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 550px){
+    #login_form{
+        width: 90%;
+        padding: 1rem;
+    }
+    #login_form p{
+        font-size: 1.6rem;
+    }
+    #login_form p{
+        font-size: 0.9rem;
+    }
+    #login_form button{
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+#urlSection{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12, 9, 44);
+    padding: 20px;
+}
+#urlSection ul{
+  float: right;
+}
+#urlSection ul li{
+    display: inline-block;
+    margin-right: 16px;
+}
+#urlSection ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(208, 57, 129);
+    padding: 8px 16px;
+}
+
+#url_form {
+    margin-top: 60px;
+}
+#url_form h1{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#url_form input[type="text"]{
+     height: 36px;
+     outline: none;
+     border: 0.2rem solid rgb(208, 57, 129);
+     margin-bottom: 10px;
+     width: 30%;
+     color: black;
+     padding: 0 5px;
+}
+#url_form button{
+    height: 36px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 12%;
+    cursor: pointer;
+    background-color: rgb(208, 57, 129);
+    position: relative;
+    top: 2px;
+}
+#url_form p{
+     height: 36px;
+     outline: none;
+     border: 0.2rem solid rgb(208, 57, 129);
+     margin-bottom: 10px;
+     width: 30%;
+     color: black;
+     padding: 0 5px;
+     background-color: white;
+}
+
+#custom_form {
+    margin-top: 20px;
+}
+#custom_form h1{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#custom_form input[type="text"]{
+     height: 36px;
+     outline: none;
+     border: 0.2rem solid rgb(208, 57, 129);
+     margin-bottom: 10px;
+     width: 30%;
+     color: black;
+     padding: 0 5px;
+}
+#custom_form button{
+    height: 36px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 12%;
+    cursor: pointer;
+    background-color: rgb(208, 57, 129);
+}
+#custom_form p{
+     height: 36px;
+     outline: none;
+     border: 0.2rem solid rgb(208, 57, 129);
+     margin-bottom: 10px;
+     width: 30%;
+     color: black;
+     padding: 0 5px;
+     background-color: white;
+}
+
+#qr_form {
+    margin-top: 20px;
+}
+#qr_form h1{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#qr_form input[type="text"]{
+     height: 36px;
+     outline: none;
+     border: 0.2rem solid rgb(208, 57, 129);
+     margin-bottom: 10px;
+     width: 30%;
+     color: black;
+     padding: 0 5px;
+}
+#qr_form button{
+    height: 36px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 15%;
+    cursor: pointer;
+    background-color: rgb(208, 57, 129);
+    position: relative;
+    top: 2px;
+}
+#qr_form p{
+     height: 36px;
+     outline: none;
+     border: 0.2rem solid rgb(208, 57, 129);
+     margin-bottom: 10px;
+     width: 30%;
+     color: black;
+     padding: 0 5px;
+     background-color: white;
+}
+@media screen and (max-width: 799px){
+    #url_form h1{
+        font-size: 18px;
+    }
+    #url_form input[type="text"]{
+         width: 60%;
+    }
+    #url_form button{
+        width: 36%;
+        font-size: 12px;
+    }
+    #url_form p{
+         width: 60%;
+    }
+    #custom_form h1{
+        font-size: 18px;
+    }
+    #custom_form input[type="text"]{
+         width: 60%;
+    }
+    #custom_form button{
+        width: 36%;
+        font-size: 12px;
+    }
+    #custom_form p{
+        width: 60%;
+    }
+    #qr_form h1{
+        font-size: 18px;
+    }
+    #qr_form input[type="text"]{
+         width: 60%;
+    }
+    #qr_form button{
+        width: 36%;
+        font-size: 12px;
+        top: 0;
+        font-weight: bold;
+    }
+    #qr_form p{
+        width: 60%;
+    }
+}
+.history{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12, 9, 44);
+    padding: 20px;
+}
+.history table{
+    margin: 5% auto;
+     text-align: center;
+     border-collapse: separate;
+        border-spacing: 40px;
+}
+.history table thead tr th{
+    color: white;
+    font-size: 36px;
+}
+.history table tbody tr td{
+    color: rgb(208, 57, 129);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 799px){
+    .history{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(12, 9, 44);
+        padding: 20px;
+    }
+    .history table{
+        margin: 20% auto;
+        text-align: left;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    .history table thead tr th{
+        color: white;
+        font-size: 20px;
+    }
+    .history table tbody tr td{
+        color: rgb(208, 57, 129);
+        font-size: 3px;
+    }
+}

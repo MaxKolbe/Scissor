@@ -1,0 +1,40 @@
+<%- include("partials/header"); -%>
+<section id="urlSection">
+    <ul>
+        <li><a href="/scissor/history">HISTORY</a></li>
+        <li><a href="/logout">LOGOUT</a></li>
+    </ul>
+    <form action="/scissor/basicUrl" method="POST" id="url_form">
+        <h1>URL GENERATOR</h1>
+        <div>
+            <input type="text" name="url" placeholder="Paste url here">
+            <button type="submit">GET LINK</button>
+        </div>
+        <% if(url.real === 2) { %>
+            <p><a href="<%=url.short %>" target="_blank" title="Right-click to copy url"><%= url.short %></a></p>
+        <% } else { %>
+            <p><a href=""></a></p>
+        <% } %>
+    </form>
+    <form action="/scissor/customUrl" method="POST" id="custom_form">
+        <h1>CUSTOM URL GENERATOR</h1>
+        <div>
+            <input type="text" name="longurl" placeholder="Paste url here">
+            <input type="text" name="customurl" placeholder="Enter your custom url">
+            <button type="submit">GET LINK</button>
+        </div>
+        <% if(url.real === 3) { %>
+            <p><a href="<%=url.short %>" target="_blank" title="Right-click to copy url"></a>><%= url.short %></a></p>
+        <% } else { %>
+            <p><a href=""></a></p>
+        <% } %>
+    </form>
+    <form action="/scissor/qrcode" method="POST" id="qr_form">
+        <h1>QR CODE GENERATOR</h1>
+        <div>
+            <input type="text" name="longurl" placeholder="Paste url here">
+            <button type="submit">GET QR CODE</button>
+        </div>
+    </form>
+</section>
+<%- include("partials/footer"); -%>

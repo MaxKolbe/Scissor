@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+<section class="history" id="urlSection">
+    <ul>
+        <li><a href="/logout">LOGOUT</a></li>
+        <li><a href="/scissor/urlpage">GO BACK</a></li>
+    </ul>
+    <table >
+        <thead>
+          <tr>
+            <th>Full URL</th>
+            <th>Short URL</th>
+            <th>Clicks</th>
+            <th>Location IP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% url.forEach(urls => { %>
+            <tr>
+              <td><a href="<%= urls.long %>"><%= urls.long %></a></td>
+              <td><a href="<%= urls.short %>"><%= urls.short %></a></td>
+              <td><%= urls.clicks %></td>
+              <td><%= urls.ipaddress %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+</section>
+<%- include("partials/footer"); -%>
+
+
