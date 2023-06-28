@@ -18,7 +18,7 @@ router.post("/qrcode", (req, res)=>{
 
     const longurl = req.body.longurl
     const long = longurl.toString()
-    console.log(long)
+    // console.log(long)
     qrCode.toDataURL(long, (err, qrCodeUrl) => {
         if (err) {
             console.error('Error generating QR code:', err);
