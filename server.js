@@ -96,4 +96,7 @@ app.use((err, req, res, next) => {
     res.status(500).json({message: 'something broke', error: err});
 });
 
-module.exports = app 
+app.listen(port, () => {
+      console.log(`Server is listening on port ${port}`);
+    });
+// module.exports = app 
