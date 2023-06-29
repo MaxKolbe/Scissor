@@ -78,7 +78,7 @@ app.post("/register", (req, res)=>{
 })
 
 //Handles the login request for existing users
-app.post('/login', passport.authenticate('local', { failureRedirect: '/' }), async (req, res) => {
+app.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), async (req, res) => {
     await urlModel.create({long: " ", short: " ", real:1})
     res.status(200).redirect("/scissor/urlpage")
 });
