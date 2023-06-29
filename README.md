@@ -31,8 +31,15 @@ Creates qrcode for urls using the 'qrcode' module
 ## INSTRUCTIONS 
 ### Please carefully read the instructions
 *Paste your url into the textbox labelled "Paste Url Here". 
+
 Click on the associated button to retrieve a shortened version of your url.
+
 *For custom url, input a custom name for your url in the textbox labelled "Enter your custom url". 
+
 Click on the associated button to retrieve a shortened version of your url. 
+
 *For the qrcode generator, Paste your url into the textbox labelled "Paste Url Here". 
+
 Click on the "Get Qr Code" button. 
+
+![](pic.png)
