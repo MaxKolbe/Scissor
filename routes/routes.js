@@ -16,7 +16,7 @@ router.get("/history", connectEnsureLogin.ensureLoggedIn(), async (req, res)=>{
 })
 router.post("/qrcode", (req, res)=>{
 
-    const longurl = req.body.longurl
+    const longurl = req.body.longurl 
     const long = longurl.toString()
     // console.log(long)
     qrCode.toDataURL(long, (err, qrCodeUrl) => {
