@@ -1,4 +1,4 @@
-# SCISSOR
+# SCISSOR (DEPRECATED)
 Welcome to scissor. A simple, seamless url-shortener and qr-code generator. 
 
 ## FUNCTIONALITIES 
